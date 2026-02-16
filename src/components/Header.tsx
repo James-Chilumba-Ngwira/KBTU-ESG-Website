@@ -4,6 +4,7 @@
  import { Button } from "@/components/ui/button";
  import { Input } from "@/components/ui/input";
  import { Link } from "react-router-dom";
+ import logoImg from "@/assets/esg-kbtu-logo.png";
  
  const Header = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@
          <div className="flex items-center justify-between h-16 md:h-20">
            {/* Logo */}
            <div className="flex items-center gap-3">
-             <img src="/src/assets/esg-kbtu-logo.png" alt="ESG KBTU Logo" className="h-12 md:h-16 object-contain" />
+             <img src={logoImg} alt="ESG KBTU Logo" className="h-12 md:h-16 object-contain" />
            </div>
  
            {/* Search Bar - Desktop */}

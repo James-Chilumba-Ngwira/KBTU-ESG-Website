@@ -1,4 +1,5 @@
  import { Mail, Phone, MapPin, Send, Facebook, Youtube, Instagram } from "lucide-react";
+ import logoImg from "@/assets/esg-kbtu-logo.png";
  
  const Footer = () => {
    return (
@@ -8,7 +9,7 @@
            {/* Logo & Contact */}
            <div>
              <div className="flex items-center gap-3 mb-4">
-               <img src="/src/assets/esg-kbtu-logo.png" alt="ESG KBTU Logo" className="h-12 md:h-14 object-contain" />
+               <img src={logoImg} alt="ESG KBTU Logo" className="h-12 md:h-14 object-contain" />
              </div>
              <p className="text-2xl font-bold text-secondary mb-4">8 727 357 42 42</p>
              <div className="space-y-2 text-sm opacity-80">
