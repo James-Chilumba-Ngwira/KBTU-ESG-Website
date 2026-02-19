@@ -4,7 +4,11 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/KBTU-ESG-Website/" : "/",
+  base: process.env.NETLIFY
+    ? "/"
+    : mode === "production"
+      ? "/KBTU-ESG-Website/"
+      : "/",
   plugins: [react()],
   resolve: {
     alias: {
